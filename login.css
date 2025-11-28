@@ -10,14 +10,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('images/daundaun22.jpg') no-repeat center center/cover;
+  background: url('images/pantai.jpg') no-repeat center center/cover;
 }
 
 
 .container {
   display: flex;
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -27,7 +27,7 @@ body {
 /* Kiri */
 .left-panel {
   flex: 1;
-  background: #2e7d32;
+  background: #f1b212;
   color: white;
   padding: 40px;
   display: flex;
