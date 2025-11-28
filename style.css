@@ -275,6 +275,7 @@ p, ul {
   color: #2c3e50;
 }
 
+/* Animasi keluar ke kiri */
 .slide-out {
   animation: slideOutLeft 0.4s ease forwards;
 }
@@ -290,6 +291,7 @@ p, ul {
   }
 }
 
+/* Animasi masuk dari kanan */
 .slide-in {
   animation: slideInRight 0.4s ease forwards;
 }
@@ -305,7 +307,7 @@ p, ul {
   }
 }
 
-
+/* Efek zoom untuk teks */
 @keyframes zoomText {
   0% {
     transform: scale(1);

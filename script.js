@@ -21,10 +21,21 @@ document.querySelectorAll("nav a").forEach(link => {
     const href = this.getAttribute("href");
     if (href && href.endsWith(".html")) {
       e.preventDefault();
-      document.body.classList.add("fade-slide");
-      setTimeout(() => {
-        window.location.href = href;
-      }, 400); // tunggu animasi selesai
+
+      // kalau link sama dengan halaman sekarang → reload dengan animasi keluar
+      if (window.location.href.includes(href)) {
+        document.body.classList.remove("slide-in");
+        document.body.classList.add("slide-out");
+        setTimeout(() => {
+          window.location.reload();
+        }, 400);
+      } else {
+        document.body.classList.remove("slide-in");
+        document.body.classList.add("slide-out");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 400);
+      }
     }
   });
 });
@@ -34,35 +45,5 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", function(e) {
-    const href = this.getAttribute("href");
-    if (href && href.endsWith(".html")) {
-      e.preventDefault();
-      document.body.classList.add("slide-out");
-      setTimeout(() => {
-        window.location.href = href;
-      }, 400); // tunggu animasi selesai
-    }
-  });
-});
-
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", function(e) {
-    const href = this.getAttribute("href");
-    if (href && href.endsWith(".html")) {
-      e.preventDefault();
-
-      // Tambahkan efek zoom ke teks yang diklik
-      this.classList.add("nav-zoom");
-
-      // Setelah animasi selesai, pindah halaman
-      setTimeout(() => {
-        window.location.href = href;
-      }, 400);
-    }
-  });
-});
 
 
