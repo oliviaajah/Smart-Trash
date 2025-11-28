@@ -13,10 +13,12 @@
   <!-- Header -->
 <header>
   <div class="header-top">
-    <div class="brand">
-      <img src="images/green-1968596_1280.png" alt="Smart Trash" class="logo">
-      <span class="brand-text">Smart Trash</span>
-    </div>
+<div class="brand">
+  <a href="index.html" class="brand-link">
+    <img src="images/green-1968596_1280.png" alt="Smart Trash" class="logo">
+    <span class="brand-text">Smart Trash</span>
+  </a>
+</div>
 
     <div class="sosmed">
       <a href="#"><img src="images/instagram.webp" alt="Instagram" /></a>
@@ -65,8 +67,28 @@
       <textarea name="pesan" rows="5" required></textarea>
 
       <button type="submit">Kirim Pesan</button>
+      <div id="pesan-terkirim" style="display: none; margin-top: 20px; color: green; font-weight: bold;"></div>
+
     </form>
   </section>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".form-kontak");
+    const pesanBox = document.getElementById("pesan-terkirim");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Mencegah reload halaman
+
+      // Simulasi pengiriman
+      setTimeout(() => {
+        pesanBox.textContent = "✅ Pesan kamu telah berhasil dikirim! Terima kasih atas partisipasimu dalam menjaga lingkungan 🌿";
+        pesanBox.style.display = "block";
+        form.reset(); // Kosongkan form
+      }, 500);
+    });
+  });
+</script>
 
 </body>
 </html>

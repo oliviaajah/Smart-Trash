@@ -543,3 +543,100 @@ nav a:hover {
   background-color: #219150;
 }
 
+.btn-kembali {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-kembali:hover {
+  background-color: #27ae60;
+}
+
+/* ===== Halaman Gabung ===== */
+.gabung {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gabung h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.gabung p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.gabung ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding-left: 20px;
+}
+
+/* ===== Formulir Pendaftaran ===== */
+.form-gabung {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-gabung label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-gabung input,
+.form-gabung textarea,
+.form-gabung select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-gabung button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-gabung button:hover {
+  background-color: #27ae60;
+}
+
+/* ===== Tombol Kembali ===== */
+.btn-kembali {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-kembali:hover {
+  background-color: #27ae60;
+}

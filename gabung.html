@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabung ECO TRASH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-top">
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <img src="images/green-1968596_1280.png" alt="Smart Trash" class="logo">
+        <span class="brand-text">Smart Trash</span>
+      </a>
+    </div>
+    <div class="sosmed">
+      <a href="#"><img src="images/instagram.webp" alt="Instagram" /></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/Youtube.png" alt="YouTube" /></a>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <div class="login-btn">
+    <a href="login.html"><button>Login</button></a>
+  </div>
+</header>
+
+<section class="gabung">
+  <h1>Gabung Sekarang</h1>
+  <p>Jadilah bagian dari gerakan ECO TRASH dan bantu wujudkan lingkungan yang bersih dan berkelanjutan 🌱</p>
+
+  <h2>Manfaat Menjadi Anggota</h2>
+  <ul>
+    <li>Dapat poin dari sampah terpilah</li>
+    <li>Akses layanan pickup sampah</li>
+    <li>Ikut pelatihan dan workshop daur ulang</li>
+    <li>Berperan aktif dalam komunitas hijau</li>
+  </ul>
+
+  <form class="form-gabung">
+    <label>Nama Lengkap:</label>
+    <input type="text" name="nama" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Alamat:</label>
+    <textarea name="alamat" rows="3" required></textarea>
+
+    <label>Jenis Sampah yang Sering Dikumpulkan:</label>
+    <select name="jenis">
+      <option value="plastik">Plastik</option>
+      <option value="kertas">Kertas</option>
+      <option value="organik">Organik</option>
+      <option value="logam">Logam</option>
+    </select>
+
+    <button type="submit">Kirim Pendaftaran</button>
+  </form>
+
+  <div class="back-button">
+    <a href="index.html" class="btn-kembali">← Kembali ke Beranda</a>
+  </div>
+</section>
+
+<script>
+  document.querySelector(".form-gabung").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("✅ Pendaftaran berhasil! Tim ECO TRASH akan segera menghubungi kamu.");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
